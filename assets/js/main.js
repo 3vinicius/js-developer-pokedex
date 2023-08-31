@@ -19,6 +19,57 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+
+            <div class="modal" id="model" hidden>
+            <div class="stats">
+              <ol>
+                <h3>About</h3>
+                <li class="infoAbout">
+                  <p>Height</p>
+                  <p>${pokemon.about.height}</p>
+                </li>
+                <li class="infoAbout">
+                  <p>Weight</p>
+                  <p>${pokemon.about.weight}</p>
+                </li>
+                <li class="infoAbout">
+                  <p>Abilities</p>
+                  <p>${pokemon.about.abilities[0]},${pokemon.about.abilities[1]}</p>
+                </li>
+              </ol>
+              <ol>
+                <h3>Base Stats</h3>
+                <li>
+                  <p calss="infoStats">HP</p>
+                  <span class="progress-bar" style="--progress:${pokemon.stats.hp}"></span>
+                </li>
+                <li>
+                  <p>Attack</p>
+                  <span class="progress-bar" style="--progress:${pokemon.stats.att}"></span>
+                </li>
+                <li>
+                  <p>Defense</p>
+                  <span class="progress-bar" style="--progress:${pokemon.stats.def}"></span>
+                </li>
+                <li>
+                  <p>Sp. Atk</p>
+                  <span class="progress-bar" style="--progress:${pokemon.stats.spAttack}"></span>
+                </li>
+                <li>
+                  <p>Sp. Def</p>
+                  <span class="progress-bar" style="--progress:${pokemon.stats.spDef}"></span>
+                </li>
+                <li>
+                  <p>Speed</p>
+                  <span class="progress-bar" style="--progress:${pokemon.stats.speed}"></span>
+                </li>
+                <li>
+                  <p>Total</p>
+                  <span class="progress-bar" style="--progress:${pokemon.stats.total}"></span>
+                </li>
+              </ol>
+            </div>
+          </div>
         </li>
     `
 }
