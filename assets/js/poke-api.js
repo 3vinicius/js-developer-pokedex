@@ -33,8 +33,6 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.stats.spDef +
     pokemon.stats.spAttack) / 6;
 
-  console.log(pokemon.stats);
-  console.log(pokemon.about);
 
   return pokemon;
 }

@@ -1,6 +1,5 @@
 .modal {
   height: 90%;
-  transition: height 3s linear 3s
 }
 
 
@@ -22,7 +21,7 @@
 }
 
 .stats {
-  border-radius: 1rem;
+  border-radius: 0.625rem;
   background-color: #fff;
   height: 100%;
   display: flex;

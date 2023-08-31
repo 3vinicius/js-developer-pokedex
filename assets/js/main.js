@@ -34,7 +34,7 @@ function convertPokemonToLi(pokemon) {
                 </li>
                 <li class="infoAbout">
                   <p>Abilities</p>
-                  <p>${pokemon.about.abilities[0]},${pokemon.about.abilities[1]}</p>
+                  <p>${pokemon.about.abilities[0]}, ${pokemon.about.abilities[1]}</p>
                 </li>
               </ol>
               <ol>
