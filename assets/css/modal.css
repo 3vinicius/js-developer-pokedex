@@ -2,8 +2,6 @@
   height: 90%;
 }
 
-
-
 .progress-bar {
   --progress: 0;
   height: 5px;
@@ -60,4 +58,3 @@
   padding: 5px;
   font-weight: 500;
 }
-

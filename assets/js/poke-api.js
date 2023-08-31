@@ -13,8 +13,6 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
 
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
 
-  //console.log(pokeDetail.stats[0].base_stat)
-
   pokemon.about.height = pokeDetail.height;
   pokemon.about.weight = pokeDetail.weight;
   pokemon.about.abilities = pokeDetail.abilities.map((v) => v.ability.name);
@@ -25,14 +23,14 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
   pokemon.stats.spAttack = pokeDetail.stats[3].base_stat;
   pokemon.stats.spDef = pokeDetail.stats[4].base_stat;
   pokemon.stats.speed = pokeDetail.stats[5].base_stat;
-  pokemon.stats.total = (
-    pokemon.stats.att +
-    pokemon.stats.hp +
-    pokemon.stats.def +
-    pokemon.stats.speed +
-    pokemon.stats.spDef +
-    pokemon.stats.spAttack) / 6;
-
+  pokemon.stats.total =
+    (pokemon.stats.att +
+      pokemon.stats.hp +
+      pokemon.stats.def +
+      pokemon.stats.speed +
+      pokemon.stats.spDef +
+      pokemon.stats.spAttack) /
+    6;
 
   return pokemon;
 }
