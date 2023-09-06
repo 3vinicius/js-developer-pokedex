@@ -7,3 +7,6 @@
 
 - Para isso, foi utilizado o [MutationObserver](https://developer.mozilla.org/pt-BR/docs/Web/API/MutationObserver), uma API JavaScript para observar as alterações no DOM.
 - As informações consumidas foram adicionadas em cada card. Ao clicar, o usuário poderá visualizar essas informações.
+
+
+Acesse [pokedex](https://courageous-cannoli-cff512.netlify.app)
